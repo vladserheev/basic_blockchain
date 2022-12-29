@@ -8,3 +8,13 @@ C:\Users\Windows 10\work\shmotcin\shmotcin\obj\Debug\shmotcin.csproj.GenerateRes
 C:\Users\Windows 10\work\shmotcin\shmotcin\obj\Debug\shmotcin.csproj.CoreCompileInputs.cache
 C:\Users\Windows 10\work\shmotcin\shmotcin\obj\Debug\shmotcin.exe
 C:\Users\Windows 10\work\shmotcin\shmotcin\obj\Debug\shmotcin.pdb
+C:\Users\Windows 10\work\basic_blockchain\shmotcin\bin\Debug\shmotcin.exe.config
+C:\Users\Windows 10\work\basic_blockchain\shmotcin\bin\Debug\shmotcin.exe
+C:\Users\Windows 10\work\basic_blockchain\shmotcin\bin\Debug\shmotcin.pdb
+C:\Users\Windows 10\work\basic_blockchain\shmotcin\obj\Debug\shmotcin.csproj.AssemblyReference.cache
+C:\Users\Windows 10\work\basic_blockchain\shmotcin\obj\Debug\shmotcin.csproj.SuggestedBindingRedirects.cache
+C:\Users\Windows 10\work\basic_blockchain\shmotcin\obj\Debug\shmotcin.Properties.Resources.resources
+C:\Users\Windows 10\work\basic_blockchain\shmotcin\obj\Debug\shmotcin.csproj.GenerateResource.cache
+C:\Users\Windows 10\work\basic_blockchain\shmotcin\obj\Debug\shmotcin.csproj.CoreCompileInputs.cache
+C:\Users\Windows 10\work\basic_blockchain\shmotcin\obj\Debug\shmotcin.exe
+C:\Users\Windows 10\work\basic_blockchain\shmotcin\obj\Debug\shmotcin.pdb

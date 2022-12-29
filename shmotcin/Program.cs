@@ -21,13 +21,14 @@ namespace shmotcin
                 Data = data;
                 PreviousBlockHash = previousBlockHash;
                 Timestamp = DateTime.Now;
-                BlockHash = CreateHash();
+                BlockHash = MineBlock();
                 Console.WriteLine("block with Hash: " + BlockHash + " created");
             }
 
-            public void MineBlock(int proofOfWorkDifficulty)
+            public string MineBlock()
             {
                 bool isProofed = false;
+                string blockHash="";
                 string CurrentHash;
                 while (!isProofed)
                 {
@@ -35,33 +36,26 @@ namespace shmotcin
                     if (CurrentHash.StartsWith("0000"))
                     {
                         isProofed = true;
-                        BlockHash = CurrentHash;
-                        Console.WriteLine("block with Hash="+BlockHash+" created");
+                        blockHash = CurrentHash;
                     }
+                    _nonce++;
                 }
+                return blockHash;
             }
 
             public string CreateHash()
             {
-
                 string rawData = _nonce + Data + PreviousBlockHash + Timestamp;
-                    
-
                 string hash = String.Empty;
 
-                // Initialize a SHA256 hash object
                 using (SHA256 sha256 = SHA256.Create())
                 {
-                    // Compute the hash of the given string
                     byte[] hashValue = sha256.ComputeHash(Encoding.UTF8.GetBytes(rawData));
-
-                    // Convert the byte array to string format
                     foreach (byte b in hashValue)
                     {
                         hash += $"{b:X2}";
                     }
                 }
-
                 return hash;
             }
         }
@@ -83,6 +77,20 @@ namespace shmotcin
                 Blocks.Add(new Block(data, previousBlock.BlockHash));
             }
 
+            public void IsChainValid()
+            {
+                int blockIndex = 1;
+                while (blockIndex < Blocks.Count)
+                {
+                    if(Blocks[blockIndex].PreviousBlockHash != Blocks[blockIndex - 1].BlockHash)
+                    {
+                        Console.WriteLine("Error! invalid blockchain");
+                        return;
+                    }
+                    blockIndex++;
+                }
+            }
+
             public Block GetPreviousBlock()
             {
                 return Blocks[Blocks.Count - 1];
@@ -91,9 +99,10 @@ namespace shmotcin
 
         static void Main()
         {
-            //Console.OutputEncoding = UTF8Encoding.UTF8;
-            Blockchain myBlockchain = new Blockchain("shmotchain");
-            myBlockchain.AddNewBlock("chinaga");
+            Blockchain myBlockchain = new Blockchain("mychain");
+            myBlockchain.AddNewBlock("block1");
+            myBlockchain.AddNewBlock("block2");
+            myBlockchain.AddNewBlock("block3");
         }
     }
 }
