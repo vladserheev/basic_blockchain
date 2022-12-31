@@ -139,7 +139,6 @@ namespace shmotcin
                 double spent = 0;
                 double income = 0;
                 double balance = 0;
-                double totalBalance = 0;
                 foreach(var block in Blocks)
                 {
                     var transactions = block.Transactions;
@@ -155,10 +154,9 @@ namespace shmotcin
                         }
                         balance = income - spent;
                     }
-                    totalBalance = totalBalance + balance;
                 }
-                Console.WriteLine("Balance: {0}", totalBalance);
-                return totalBalance;
+                Console.WriteLine("Balance: {0}", balance);
+                return balance;
             }
 
             public void PrintAllBlocks()
