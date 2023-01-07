@@ -18,3 +18,8 @@ C:\Users\Windows 10\work\basic_blockchain\shmotcin\obj\Debug\shmotcin.csproj.Gen
 C:\Users\Windows 10\work\basic_blockchain\shmotcin\obj\Debug\shmotcin.csproj.CoreCompileInputs.cache
 C:\Users\Windows 10\work\basic_blockchain\shmotcin\obj\Debug\shmotcin.exe
 C:\Users\Windows 10\work\basic_blockchain\shmotcin\obj\Debug\shmotcin.pdb
+C:\Users\Windows 10\work\basic_blockchain\shmotcin\bin\Debug\LiteDB.dll
+C:\Users\Windows 10\work\basic_blockchain\shmotcin\bin\Debug\LiteDB.xml
+C:\Users\Windows 10\work\basic_blockchain\shmotcin\obj\Debug\shmotcin.csproj.CopyComplete
+C:\Users\Windows 10\work\basic_blockchain\shmotcin\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Windows 10\work\basic_blockchain\shmotcin\bin\Debug\Newtonsoft.Json.xml
