@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using LiteDB;
+using shmotcin.Models;
 using shmotcin.DB;
 using Newtonsoft.Json;
 
-namespace shmotcin.main
+namespace shmotcin
 {
     internal class Blockchain
     {

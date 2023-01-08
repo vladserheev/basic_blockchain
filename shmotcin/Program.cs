@@ -1,5 +1,4 @@
-﻿using shmotcin.main;
-using shmotcin.DB;
+﻿using shmotcin.DB;
 namespace shmotcin
 {
     internal static class Program

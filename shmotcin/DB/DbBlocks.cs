@@ -1,6 +1,6 @@
 ﻿using System;
 using LiteDB;
-using shmotcin.main;
+using shmotcin.Models;
 
 namespace shmotcin.DB
 {

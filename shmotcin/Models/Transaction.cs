@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace shmotcin.main
+namespace shmotcin.Models
 {
     internal class Transaction
     {

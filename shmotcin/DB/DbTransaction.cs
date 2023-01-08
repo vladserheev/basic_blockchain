@@ -1,6 +1,7 @@
 ﻿using System;
 using LiteDB;
-using shmotcin.main;
+using shmotcin.Models;
+
 namespace shmotcin.DB
 {
     internal class DbTransaction
@@ -51,6 +52,5 @@ namespace shmotcin.DB
             trxPool.DeleteAll();
             Console.WriteLine("MemPool cleared!");
         }
-
     }
 }
